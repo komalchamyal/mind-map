@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./public/icon.png">
+    <title>Mind Map</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar"><h1>Mind Map</h1></div>
+      <div class="container">
+        <div class="input">
+          <h2>Step 1</h2>
+          <label for="fileInput" class="inputbox">
+            Input File
+          </label>
+          <input
+            type="file"
+            id="fileInput"
+            style="display: none;"
+            accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+          />
+        </div>
+        <div id="root"></div>
+
+      </div>
+
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
